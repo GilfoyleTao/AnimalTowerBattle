@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class DeadZone : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameManager gameManager;
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        gameManager.ShowGameOverUI();
+        Time.timeScale = 0;   
+    }
 }
