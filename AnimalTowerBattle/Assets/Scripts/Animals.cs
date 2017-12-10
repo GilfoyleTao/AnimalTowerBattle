@@ -21,7 +21,7 @@ public class Animals : MonoBehaviour
 
     void DropAnimal()
     {
-        int prefabId = Random.Range(0, 11);
+        int prefabId = Random.Range(0, 10);
         Camera gameCamera = Camera.main;
         Vector2 pos = Input.mousePosition;
         Vector3 worldPos = gameCamera.ScreenToWorldPoint(pos);
